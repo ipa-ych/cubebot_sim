@@ -13,7 +13,7 @@ def generate_launch_description():
     # xacro_file = os.path.join(get_package_share_directory('cube_sim'), 'urdf', 'cubic_with_controller.urdf.xacro')
     # robotDescription = xacro.process_file(xacro_file).toxml()
 
-    urdf_file = os.path.join(get_package_share_directory('cube_sim'), 'urdf', 'cubic_simple.xacro.urdf')
+    urdf_file = os.path.join(get_package_share_directory('cube_sim'), 'urdf', 'cubic_prismatic_ros2control.xacro.urdf')
     doc = xacro.parse(open(urdf_file))
     xacro.process_doc(doc)
     robotDescription = doc.toxml()
